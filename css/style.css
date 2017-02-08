@@ -1,0 +1,103 @@
+body {
+  background: lightgrey;
+}
+ul li {
+    list-style-type: none;
+}
+.buttons {
+  padding: 30px;
+}
+.active {
+  background: #072a79;
+  padding: 20px 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.big-height {
+  height: 100vh;
+}
+.buttons-list {
+  text-align: center;
+  padding: 30px;
+  background: rgba(209, 233, 241, 0.86);
+  border: 2px solid #000;
+}
+.buttons-list li {
+  display: inline-block;
+  height: 60px;
+  vertical-align: top;
+  list-style-type: none;
+  margin:  0 15px 15px 0;
+}
+button {
+  background: #227b0f;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 15px 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  outline: none;
+}
+button:hover {
+  background: rgba(0, 0, 0, .7);
+}
+button[disabled] {
+  background: grey;
+}
+p {
+    display: none;
+}
+.buttons-list li:nth-child(13) p,
+.buttons-list li:nth-child(14) p {
+    display: block;
+}
+form {
+  text-align: center;
+  width: 60%;
+  padding: 15px;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+.inputs-list li {
+    margin-bottom: 15px;
+}
+.inputs-list, .select-list, .checkbox-list, .radio-list {
+    margin-bottom: 30px;
+}
+h2 {
+  text-align: center;
+}
+.links-list {
+  text-align: center;
+  margin-top: 50px;
+}
+.links-list li {
+  margin-bottom: 60px;
+}
+.links-list a {
+  padding: 20px 60px;
+  border: 1px solid #000;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+input[type="text"] {
+  width: 200px;
+  height: 25px;
+  border: none;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+select {
+  width: 150px;
+  height: 25px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
