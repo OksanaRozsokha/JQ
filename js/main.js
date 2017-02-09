@@ -47,9 +47,11 @@ $(document).ready(function () {
 
     // по клику вывести масив текста кнопок
     $('#text-btn').on('click', function () {
+        let textBtns = [];
         $('button').each(function () {
-            console.log($(this).text());
+            textBtns.push($(this).text());
         });
+        console.log(textBtns);
     });
 
     //найти эту кнопку в теге body и вывести в консоль результат поиска
@@ -77,12 +79,17 @@ $(document).ready(function () {
         $('#show-text').parent().find('p').show();
     });
 
-    //вывести следующие данные через запятые в консоль: высота кнопки, ширина кнопки, абсолютную позиция по обеим осям,
+    //вывести следую+щие данные через запятые в консоль: высота кнопки, ширина кнопки, абсолютную позиция по обеим осям,
     // значение всех атрибутов, родительский элемент, соседние кнопки сверху и снизу, текст кнопки
     $('#about-me').on('click', function () {
         let aboutBtn = $('#about-me');
+        let allAttr = '';
+        $.each(this.attributes, function() {
+           allAttr +=this.name + ':' + this.value + ';' + '';
+        });
+
         console.log(
-            aboutBtn.attr('id'),
+            allAttr,
             aboutBtn.text(),
             aboutBtn.width(),
             aboutBtn.height(),
